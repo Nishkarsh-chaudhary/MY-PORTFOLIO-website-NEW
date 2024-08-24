@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+      screens: {
+        sm: '200px',
+        md: '640px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         customBg: '	#A7C7E7', // Custom background color
         customText: '#000000', // Custom text color

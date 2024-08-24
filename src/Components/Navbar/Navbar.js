@@ -51,7 +51,7 @@ function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex lg:space-x-6 lg:font-bold">
+        <ul className="sm:hidden lg:flex lg:space-x-6 lg:font-bold">
           <li><Link to='about' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>About</Link></li>
           <li><Link to='experience' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Experience</Link></li>
           <li><Link to='projects' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Projects</Link></li>
