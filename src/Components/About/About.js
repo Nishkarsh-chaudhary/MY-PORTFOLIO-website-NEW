@@ -13,7 +13,7 @@ function About() {
   const [paragraph, setParagraph] = useState('Efficient Front-End Developer Specializing in High-Performance Web Solutions.');
 
   const [animate, setAnimate] = useState(false);
-  const [fade, setFade] = useState(true);
+  const [fade,] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {

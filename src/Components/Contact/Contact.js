@@ -6,7 +6,6 @@ import contact from "../assets/Videos/contact.mp4"
 
 
 const ContactForm = () => {
-  const [mapLocation, setMapLocation] = useState("YOUR_LOCATION"); // Replace with your location coordinates
   const [formData, setFormData] = useState({
     name: '',
     email: '',

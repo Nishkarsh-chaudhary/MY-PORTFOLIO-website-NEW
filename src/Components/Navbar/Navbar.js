@@ -7,7 +7,7 @@ import Logo from '../assets/Images/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Navbar() {
-  const [activeSection, setActiveSection] = useState('about');
+  const [setActiveSection] = useState('about');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
