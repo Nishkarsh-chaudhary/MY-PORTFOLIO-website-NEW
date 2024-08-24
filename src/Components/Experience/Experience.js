@@ -89,7 +89,7 @@ const Experience = () => {
       animate={isVisible ? 'visible' : 'hidden'}
     >
        <div className="container mx-auto px-8  dark:text-white">
-          <h1 className="text-6xl font-semibold font-poppins text-center mb-12 ">
+          <h1 className="text-4xl lg:text-6xl font-semibold font-poppins text-center mb-12 ">
            <span>My Experience </span> 
           </h1>
         </div>
