@@ -1,0 +1,21 @@
+/* Navbar light theme */
+.navbar {
+    background-color: #ffffff;
+  }
+  
+  /* Navbar dark theme */
+  .dark .navbar {
+    background-color: #1a202c;
+  }
+  
+  .desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.desktopMenuListItem:hover,
+.desktopMenuListItem.active {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}

@@ -1,13 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff; /* Light theme background color */
+  color: #000000; /* Light theme text color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark body {
+  background-color: #1a202c; /* Dark theme background color */
+  color: #e2e8f0; /* Dark theme text color */
+}
+
+/* Example for light and dark mode card background */
+.card {
+  background-color: #ffffff; /* Light theme card background */
+  color: #000000; /* Light theme card text color */
+}
+
+.dark .card {
+  background-color: #2d3748; /* Dark theme card background */
+  color: #edf2f7; /* Dark theme card text color */
 }
