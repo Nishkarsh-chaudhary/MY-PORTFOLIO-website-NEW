@@ -57,7 +57,7 @@ function Projects() {
           <h1 className="text-6xl font-semibold font-poppins text-center  mb-12 dark:text-white ">
            <span>My Projects </span> 
           </h1>
-          <div className="flex flex-col lg:flex-row w-[20rem] lg:w-full items-start gap-8 font-poppins  sm:justify-center sm:items-center ">
+          <div className="flex flex-col lg:flex-row w-[20rem] lg:w-full items-start gap-8 font-poppins  sm:justify-center sm:items-center lg:dark:text-black ">
               <ul className="flex flex-wrap flex-row rounded-lg lg:flex-col items-center space-x-4 lg:space-x-0 lg:space-y-4 flex-shrink-0 lg:bg-white lg:h-full lg:w-auto sm:mr-20">
                 {projects.map((project) => (
                   <li
