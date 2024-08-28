@@ -135,7 +135,7 @@ const ContactForm = () => {
                 loop
                 muted
                 preload="auto"
-              className="w-full h-full object-cover rounded-lg shadow-md"
+              className= "sm:hidden lg:block w-full h-full object-cover rounded-lg shadow-md "
               style={{ border: 0 }}
             >
               <source src={contact} type="video/mp4" /> 
