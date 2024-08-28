@@ -25,3 +25,9 @@
   .block {
     opacity: 1;
   }
+
+  @media (max-width: 768px) {
+    .animate-slide-up {
+      animation: slideUpMobile 0.8s ease-out;
+    }
+  }

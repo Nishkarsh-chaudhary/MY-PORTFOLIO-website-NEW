@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import backgroundVideo1 from '../assets/Videos/backgroundVideo1.mp4'; // Adjust the path as needed
-import backgroundVideo2 from '../assets/Videos/backgroundVideo2.mp4';
+import backgroundImage1 from '../assets/Videos/backgroundImage1.jpg'; // Adjust the path as needed
+import backgroundImage2 from '../assets/Videos/backgroundImage2.jpg';
 import './About.css'
 
 import Container from '../Common/Container';
@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 
 
 function About() {
-  const [background, setBackground] = useState(backgroundVideo1);
+  const [background, setBackground] = useState(backgroundImage1);
   const [paragraph, setParagraph] = useState('Efficient Front-End Developer Specializing in High-Performance Web Solutions.');
 
   const [animate, setAnimate] = useState(false);
@@ -17,11 +17,11 @@ function About() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (background === backgroundVideo1) {
-        setBackground(backgroundVideo2);
+      if (background === backgroundImage1) {
+        setBackground(backgroundImage2);
         setParagraph('Efficient Front-End Developer Specializing in High-Performance Web Solutions.');
       } else {
-        setBackground(backgroundVideo1);
+        setBackground(backgroundImage1);
         setParagraph('An Efficient DevOps Engineer Enhancing Automation and Infrastructure');
       }
 
@@ -35,32 +35,24 @@ function About() {
 
   return (
     <Container>
-    <section id="about" className="relative w-full h-[500px] pt-[5rem] lg:pt-16">
-        <video
-        key={background}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}  // Transition and fade effect
-        src={background}
-        autoPlay
-        loop
-        muted
-        preload="auto"
-      ></video>
+    <section id="about" className="relative w-full h-[500px] pt-[5rem] lg:pt-16 about-section">
+      
     
-    {/* <div
+    <div
       className="absolute inset-0 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: '100%', // Ensure the image covers the container
         filter: 'brightness(50%)', // Darken the image
       }}
-    ></div> */}
+    ></div>
 
     <div className="relative flex flex-col md:flex-row justify-between items-center w-full h-full px-8 py-6 bg-opacity-80 rounded-md shadow-lg mx-auto">
       <div className="text-left mb-8 md:mb-0 text-white flex flex-col items-center md:items-start">
-      <h1 className={`text-5xl font-semibold mb-4 font-oswald ${animate ? 'animate-slide-up' : ''}`}>
+      <h1 className={`text-2xl  lg:text-5xl font-semibold mb-4 font-oswald about-heading ${animate ? 'animate-slide-up' : ''}`}>
             I'M NISHKARSH CHAUDHARY
           </h1>
-      <h5 className={`text-2xl font-poppins ${animate ? 'animate-slide-up' : ''}`}>
+      <h5 className={`text-2xl font-poppins about-paragraph ${animate ? 'animate-slide-up' : ''}`}>
             {paragraph}
       </h5>
       </div>
