@@ -74,7 +74,7 @@ function Projects() {
                 ))}
               </ul>
 
-              <div className="bg-white sm:dark:text-black shadow-xl rounded-xl p-4 flex-grow h-auto w-[20rem] lg:h-80 lg:w-[70%] sm:mr-[12rem] ">
+              <div className="bg-white sm:dark:text-black shadow-xl rounded-xl p-4 flex-grow h-auto w-[20rem] lg:h-full lg:w-[70%]sm:mr-[12rem] ">
                 <h3 className="text-xl lg:text-5xl font-bold mb-5 text-center">
                   {projects.find((project) => project.id === activeProject)?.title}
                 </h3>
