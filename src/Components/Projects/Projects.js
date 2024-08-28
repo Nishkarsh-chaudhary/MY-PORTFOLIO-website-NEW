@@ -52,13 +52,13 @@ function Projects() {
   return (
     <Container>
     <section id="projects">
-      <div className="w-full py-16 bg-primary dark:bg-themeBlack">
-        <div className="container w-100% mx-auto px-8  dark:text-black">
+      <div className="w-full py-16 bg-primary dark:bg-themeBlack sm:flex sm:flex-col sm:justify-center sm:items-center">
+        <div className="container mx-auto px-8  dark:text-black sm:dark:text-white ]">
           <h1 className="text-6xl font-semibold font-poppins text-center  mb-12 dark:text-white ">
            <span>My Projects </span> 
           </h1>
-          <div className="flex flex-col lg:flex-row w-[20rem] lg:w-full items-start gap-8 font-poppins">
-              <ul className="flex flex-wrap flex-row rounded-lg lg:flex-col items-center space-x-4 lg:space-x-0 lg:space-y-4 flex-shrink-0 lg:bg-white lg:h-full lg:w-auto">
+          <div className="flex flex-col lg:flex-row w-[20rem] lg:w-full items-start gap-8 font-poppins  sm:justify-center sm:items-center ">
+              <ul className="flex flex-wrap flex-row rounded-lg lg:flex-col items-center space-x-4 lg:space-x-0 lg:space-y-4 flex-shrink-0 lg:bg-white lg:h-full lg:w-auto sm:mr-20">
                 {projects.map((project) => (
                   <li
                     key={project.id}
@@ -74,7 +74,7 @@ function Projects() {
                 ))}
               </ul>
 
-              <div className="bg-white shadow-xl rounded-xl p-4 flex-grow h-auto w-[20rem] lg:h-80 lg:w-[70%] mx-auto ">
+              <div className="bg-white sm:dark:text-black shadow-xl rounded-xl p-4 flex-grow h-auto w-[20rem] lg:h-80 lg:w-[70%] sm:mr-[12rem] ">
                 <h3 className="text-xl lg:text-5xl font-bold mb-5 text-center">
                   {projects.find((project) => project.id === activeProject)?.title}
                 </h3>
