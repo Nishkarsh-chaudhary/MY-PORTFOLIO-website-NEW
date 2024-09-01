@@ -1,52 +1,25 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Container from '../Common/Container';
 import Card from '../Common/Card';
 import { skills } from '../../Data/skillsData';
 
 const Skills = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const [activeIndices, setActiveIndices] = useState(skills.map((_, index) => index));
   const [resetAnimation, setResetAnimation] = useState(false);
   const [showMore, setShowMore] = useState(false); // State to manage the view more button
 
-  const sectionRef = useRef(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      },
-      {
-        rootMargin: '0px',
-        threshold: 0.5,
-      }
-    );
+    const interval = setInterval(() => {
+      setResetAnimation(true);
+      setActiveIndices((prevIndices) =>
+        prevIndices.map((index) => (index + 1) % skills.length)
+      );
+      setTimeout(() => setResetAnimation(false), 200);
+    }, 3000);
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
+    return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    if (isVisible) {
-      const interval = setInterval(() => {
-        setResetAnimation(true);
-        setActiveIndices((prevIndices) =>
-          prevIndices.map((index) => (index + 1) % skills.length)
-        );
-        setTimeout(() => setResetAnimation(false), 200);
-      }, 3000);
-
-      return () => clearInterval(interval);
-    }
-  }, [isVisible]);
 
   const containerVariants = {
     visible: {
@@ -77,10 +50,9 @@ const Skills = () => {
       <motion.div
         className="flex flex-col items-center justify-center bg-primary p-[20px] dark:bg-themeBlack"
         id="skills"
-        ref={sectionRef}
         variants={containerVariants}
         initial="hidden"
-        animate={isVisible ? 'visible' : 'hidden'}
+        animate="visible"
       >
         <div className="container mx-auto px-8 dark:text-white">
           <h1 className="text-6xl font-semibold font-Poppins text-center mb-12">
