@@ -59,11 +59,11 @@ const Skills = () => {
             My Skills
           </h1>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {activeIndices.slice(0, showMore ? skills.length : 4).map((activeIndex, index) => (
             <motion.div
               key={index}
-              className="w-full bg-white p-5 rounded-xl shadow-md text-center dark:text-black"
+              className="w-full bg-white p-5 rounded-xl shadow-md text-center dark:text-black flex items-center justify-center"
               variants={cardVariants}
               initial="hidden"
               animate={resetAnimation ? "hidden" : "visible"}
