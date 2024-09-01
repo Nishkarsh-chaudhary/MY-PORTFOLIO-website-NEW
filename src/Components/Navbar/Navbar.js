@@ -57,6 +57,7 @@ function Navbar() {
           <li><Link to='projects' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Projects</Link></li>
           <li><Link to='skills' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Skills</Link></li>
           <li><Link to='contact' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Contact</Link></li>
+          <li><a href="https://drive.google.com/file/d/13_UdWjucxNLvVWS-PDcFu2K28FtmrqC2/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='desktopMenuListItem'>Resume</a></li>
         </ul>
         <ThemeToggle  />
         {/* Mobile Menu Button */}
@@ -76,6 +77,7 @@ function Navbar() {
               <li><Link to='projects' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' onClick={toggleMobileMenu}>Projects</Link></li>
               <li><Link to='skills' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' onClick={toggleMobileMenu}>Skills</Link></li>
               <li><Link to='contact' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' onClick={toggleMobileMenu}>Contact</Link></li>
+              <li><a href="https://drive.google.com/file/d/13_UdWjucxNLvVWS-PDcFu2K28FtmrqC2/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='desktopMenuListItem' onClick={toggleMobileMenu}>Resume</a></li>
             </ul>
           </div>
         </div>

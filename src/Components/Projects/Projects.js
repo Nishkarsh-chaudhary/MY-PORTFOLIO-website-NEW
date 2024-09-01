@@ -56,7 +56,7 @@ function Projects() {
       <section id="projects">
         <div className="w-full py-16 bg-primary dark:bg-themeBlack sm:flex sm:flex-col sm:justify-center sm:items-center">
           <div className="container mx-auto px-8 dark:text-black sm:dark:text-white">
-            <h1 className="text-6xl font-semibold font-poppins text-center mb-12 dark:text-white">
+            <h1 className="text-4xl lg:text-6xl font-semibold font-poppins text-center mb-12 dark:text-white">
               <span>My Projects</span>
             </h1>
             <div className="flex flex-col items-center gap-8 font-poppins">

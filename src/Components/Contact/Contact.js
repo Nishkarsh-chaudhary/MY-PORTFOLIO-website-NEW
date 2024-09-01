@@ -53,7 +53,7 @@ const ContactForm = () => {
       className="container mx-auto px-8 dark:text-white font-poppins"
       id='contact'
       >
-        <h1 className="text-6xl font-semibold font-Poppins text-center mb-12 dark:text-white pt-10">
+        <h1 className="text-4xl lg:text-6xl font-semibold font-Poppins text-center mb-12 dark:text-white pt-10">
           <span>Get In Touch </span> 
         </h1>
       </div>

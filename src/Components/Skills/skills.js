@@ -55,7 +55,7 @@ const Skills = () => {
         animate="visible"
       >
         <div className="container mx-auto px-8 dark:text-white">
-          <h1 className="text-6xl font-semibold font-Poppins text-center mb-12">
+          <h1 className="text-4xl lg:text-6xl font-semibold font-Poppins text-center mb-12">
             My Skills
           </h1>
         </div>
