@@ -7,6 +7,7 @@ import Experience from '../Components/Experience/Experience';
 import Skills from '../Components/Skills/skills';
 import ContactForm from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Foorter';
+import Education from '../Components/Education/Education';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
         <Experience />
         <Projects />
         <Skills />
+        <Education />
         <ContactForm />
         <Footer />
     </div>

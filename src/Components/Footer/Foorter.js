@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Left Side: Image */}
         <div className="flex items-center h-[5rem] w-auto mb-4 md:mb-0">
           <img
-            src={Logo} // Replace with the path to your image
+            src={Logo}
             alt="Footer Logo"
             className="h-full w-auto rounded-2xl"
           />
@@ -58,6 +58,22 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
+      {/* Contact Details */}
+      <div className="container mx-auto w-full flex flex-col md:flex-row justify-between items-center p-4 text-center md:text-left">
+        <div className="mb-4 md:mb-0">
+          <p className="font-poppins text-gray-400">Email: <a href="mailto:nishkarsh.c2020@gmail.com" className="hover:text-yellow-400">nishkarshchaudhary51@gmail.com</a></p>
+          <p className="font-poppins text-gray-400">Phone: <a href="tel:+918077160965" className="hover:text-yellow-400">+91 8077160965</a></p>
+          <p className="font-poppins text-gray-400">Address: Meerut, Uttar Pradesh, India</p>
+        </div>
+      </div>
+
+      {/* Thank You Message */}
+      <div className="w-full flex justify-center items-center py-2 bg-gray-800">
+        <p className="text-sm font-poppins text-center text-yellow-400">Thank you for the visit!</p>
+      </div>
+
+      {/* Copyright Section */}
       <div className="w-full flex justify-center items-center py-2 bg-gray-800">
         <p className="text-xs font-poppins text-center text-gray-400">© 2024 Nishkarsh Chaudhary</p>
       </div>
