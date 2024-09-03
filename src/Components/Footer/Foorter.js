@@ -47,7 +47,7 @@ const Footer = () => {
 
         {/* Right Side: Social Media Links */}
         <div className="flex space-x-4">
-          <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+          <a href="https://www.instagram.com/__.nishkarsh/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <FaFacebook size={24} />
           </a>
           <a href="https://www.linkedin.com/in/nishkarsh-chaudhary-a08967225/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
@@ -62,7 +62,7 @@ const Footer = () => {
       {/* Contact Details */}
       <div className="container mx-auto w-full flex flex-col md:flex-row justify-between items-center p-4 text-center md:text-left">
         <div className="mb-4 md:mb-0">
-          <p className="font-poppins text-gray-400">Email: <a href="mailto:nishkarsh.c2020@gmail.com" className="hover:text-yellow-400">nishkarshchaudhary51@gmail.com</a></p>
+          <p className="font-poppins text-gray-400">Email: <a href="mailto:nishkarshchaudhary51@gmail.com" className="hover:text-yellow-400">nishkarshchaudhary51@gmail.com</a></p>
           <p className="font-poppins text-gray-400">Phone: <a href="tel:+918077160965" className="hover:text-yellow-400">+91 8077160965</a></p>
           <p className="font-poppins text-gray-400">Address: Meerut, Uttar Pradesh, India</p>
         </div>
